@@ -8,8 +8,7 @@ defmodule Friends.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: Friends.Worker.start_link(arg)
-      # {Friends.Worker, arg},
+      Example.Repo,
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
